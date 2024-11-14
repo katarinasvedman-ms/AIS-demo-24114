@@ -1,0 +1,28 @@
+{
+  "managedApiConnections": {},
+  "functionConnections": {
+    "azureFunctionOperation": {
+      "function": {
+        "id": "/subscriptions/@{appsetting('WORKFLOWS_SUBSCRIPTION_ID')}/resourceGroups/@{parameters('azureFunctionOperation-ResourceGroup')}/providers/Microsoft.Web/sites/@{parameters('azureFunctionOperation-SiteName')}/functions/BigQueryFunction"
+      },
+      "triggerUrl": "@parameters('azureFunctionOperation-TriggerUrl')",
+      "authentication": {
+        "type": "QueryString",
+        "name": "Code",
+        "value": "@appsetting('azureFunctionOperation_functionAppKey')"
+      },
+      "displayName": "big-query-conn"
+    }
+  },
+  "serviceProviderConnections": {
+    "servicebus_conn": {
+        "parameterValues": {
+          "connectionString": "@appsetting('servicebus_connectionString')"
+        },
+        "serviceProvider": {
+          "id": "/serviceProviders/serviceBus"
+        },
+        "displayName": "servicebus_conn"
+    }
+  }
+}

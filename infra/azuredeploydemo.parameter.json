@@ -1,0 +1,39 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "projectName": {
+            "value": "projkapeltol"
+        },
+        "logicAppName": {
+            "value": "la-visma-kapeltol"
+        },
+        "appServicePlanName": {
+            "value": "asp-visma-demo"
+        },
+        "storageName": {
+            "value": "strgkapeltol720124"
+        },
+        "kind": {
+            "value": "StorageV2"
+        },
+        "skuName": {
+            "value": "Standard_LRS"
+        },
+        "skuTier": {
+            "value": "Standard"
+        },
+        "location": {
+            "value": "sweden central"
+        },
+        "environmentName": {
+            "value": "env-kapeltol"
+        },
+        "serviceBusNamespaceName": {
+            "value": "asb-visma-kapeltol"
+        },
+        "serviceBusQueueName": {
+            "value": "demo-queue"
+        }
+    }
+}

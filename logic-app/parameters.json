@@ -1,0 +1,14 @@
+{
+  "azureFunctionOperation-ResourceGroup": {
+    "type": "String",
+    "value": "rg-visma-demo"
+  },
+  "azureFunctionOperation-SiteName": {
+    "type": "String",
+    "value": "demo-func-241114"
+  },
+  "azureFunctionOperation-TriggerUrl": {
+    "type": "String",
+    "value": "https://demo-func-241114.azurewebsites.net/api/bigqueryfunction"
+  }
+}

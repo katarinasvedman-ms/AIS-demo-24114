@@ -1,0 +1,88 @@
+{
+    "definition": {
+        "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+        "actions": {
+            "Call_an_Azure_function": {
+                "type": "Function",
+                "inputs": {
+                    "method": "POST",
+                    "body": "@triggerBody()",
+                    "function": {
+                        "connectionName": "azureFunctionOperation"
+                    }
+                },
+                "runAfter": {}
+            },
+            "Send_message": {
+                "type": "ServiceProvider",
+                "inputs": {
+                    "parameters": {
+                        "entityName": "demo-queue",
+                        "message": {
+                            "contentData": "@body('Call_an_Azure_function')"
+                        }
+                    },
+                    "serviceProviderConfiguration": {
+                        "connectionName": "servicebus_conn",
+                        "operationId": "sendMessage",
+                        "serviceProviderId": "/serviceProviders/serviceBus"
+                    }
+                },
+                "runAfter": {
+                    "Call_an_Azure_function": [
+                        "SUCCEEDED"
+                    ]
+                }
+            }
+        },
+        "contentVersion": "1.0.0.0",
+        "outputs": {},
+        "triggers": {
+            "When_a_HTTP_request_is_received": {
+                "type": "Request",
+                "kind": "Http",
+                "inputs": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "appId": {
+                                "type": "integer"
+                            },
+                            "eventId": {
+                                "type": "integer"
+                            },
+                            "subscriptionId": {
+                                "type": "integer"
+                            },
+                            "portalId": {
+                                "type": "integer"
+                            },
+                            "occurredAt": {
+                                "type": "integer"
+                            },
+                            "subscriptionType": {
+                                "type": "string"
+                            },
+                            "attemptNumber": {
+                                "type": "integer"
+                            },
+                            "objectId": {
+                                "type": "integer"
+                            },
+                            "changeSource": {
+                                "type": "string"
+                            },
+                            "propertyName": {
+                                "type": "string"
+                            },
+                            "propertyValue": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "kind": "Stateful"
+}

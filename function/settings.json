@@ -1,0 +1,8 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "strgkapeltol720124",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "GoogleCloudKey": "YOUR_GOOGLE"
+  }
+}

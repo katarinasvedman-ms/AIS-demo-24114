@@ -1,0 +1,15 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "strgkapeltol720124",
+    "APP_KIND": "workflowapp",
+    "ProjectDirectoryPath": "c:\\Users\\kapeltol\\src\\LA-Hubspot-ASB",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "WORKFLOWS_TENANT_ID": "<MS tenant>",
+    "WORKFLOWS_SUBSCRIPTION_ID": "<your subscrition>",
+    "WORKFLOWS_RESOURCE_GROUP_NAME": "rg-visma-demo",
+    "WORKFLOWS_LOCATION_NAME": "swedencentral",
+    "WORKFLOWS_MANAGEMENT_BASE_URI": "https://management.azure.com/",
+    "azureFunctionOperation_functionAppKey" : "<function key>"
+  }
+}

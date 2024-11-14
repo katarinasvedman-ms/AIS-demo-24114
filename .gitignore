@@ -396,3 +396,10 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+logic-app/workflow-designtime/local.settings.json
+logic-app/local.settings.json
+function/.vscode/tasks.json
+function/.vscode/settings.json
+function/.vscode/launch.json
+function/.vscode/extensions.json
+.vscode/settings.json
