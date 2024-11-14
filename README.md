@@ -1,4 +1,7 @@
 # AIS-demo-24114
+
+All files are added for reference. You might have to create your function and logic app project outside of this repo and copy the relevant files there before you continue.
+
     1. Navigate to infra folder and run deploy.ps1
     2. Deploy function code to Azure and choose the Function app you just provisioned above (named demo-func-241114)
     3. Configure CORS for Function by adding '*'
