@@ -1,15 +1,14 @@
 {
-    "IsEncrypted": false,
-    "Values": {
-      "AzureWebJobsStorage": "<storage name>",
-      "APP_KIND": "workflowapp",
-      "WORKFLOWS_TENANT_ID": "<MS tenant>",
-      "WORKFLOWS_SUBSCRIPTION_ID": "<your subscrition>",
-      "WORKFLOWS_RESOURCE_GROUP_NAME": "rg-visma-demo",
-      "WORKFLOWS_LOCATION_NAME": "swedencentral",
-      "WORKFLOWS_MANAGEMENT_BASE_URI": "https://management.azure.com/",
-      "salesforce-connectionKey": "<Salesforce Key>",
-      "salesforce-ConnectionRuntimeUrl": "https://<xxx>.16.common.logic-swedencentral.azure-apihub.net/apim/salesforce/<xxx>/",
-      "hubspot-accesstoken": "<Hubspot accesstoken>"
-    }
+  "Values": {
+    "AzureWebJobsStorage": "<your value>",
+    "APP_KIND": "<your value>",
+    "WORKFLOWS_TENANT_ID": "<your value>",
+    "WORKFLOWS_SUBSCRIPTION_ID": "<your value>",
+    "WORKFLOWS_RESOURCE_GROUP_NAME": "<your value>",
+    "WORKFLOWS_LOCATION_NAME": "<your value>",
+    "WORKFLOWS_MANAGEMENT_BASE_URI": "<your value>",
+    "salesforce-connectionKey": "<your value>",
+    "salesforce-ConnectionRuntimeUrl": "<your value>",
+    "hubspot-accesstoken": "<your value>"
+  }
 }
